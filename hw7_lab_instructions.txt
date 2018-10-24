@@ -5,7 +5,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
 1.	Update the index.html file
 			a.	Let's update our projects by adding in the content wrappers. To keep the text from spanning across the whole page, starting with the header. Add the first new <div class="content-wrap"> just after the header tag. We want to make sure we enclose all of the content, but stay within the sections. It should contain all elements that the header contains.   
 
-            b. Go back to the CSS now and add in this style in the global section. We're going to keep this style here in the global section, because it's going to be reused throughout the project. Give it a width: 950px; marginL 0 auto; 
+            b. Go back to the CSS now and add in this style in the global section. We're going to keep this style here in the global section, because it's going to be reused throughout the project. Give it a width: 950px; margin: 0 auto; 
 
 2. Go back to your HTML and add that content wrapper to the rest of the page.
             a. Add one in the work section right agter the section tag. Make sure that the closing tag encloses around the content. So it should be right before the closing section tag. 
