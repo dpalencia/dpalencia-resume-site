@@ -14,7 +14,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
 
             c. save work and examine your results in chrome with different window sizings.
  
-            d. To make the content wrapper flexible, but while still setting the width on the content, instead of using a width, we can use max-width instead. Let's go back to our CSS file and make that update. In the content-wrap selector update remove the width propert with max-width: 950px;
+            d. To make the content wrapper flexible, but while still setting the width on the content, instead of using a width, we can use max-width instead. Let's go back to our CSS file and make that update. In the content-wrap selector update remove the width property with max-width: 950px;
 
 3. Practice with padding and spacing.
             a. Still in the .content-wrap selector add some padding. I'm going to go with one value 50 pixels, (padding: 50px;). By adding padding to the content wrap, all the page sections using this class will have the same amount of padding. And this will help to keep your designs more consistent.
