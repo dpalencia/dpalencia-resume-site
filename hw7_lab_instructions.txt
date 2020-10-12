@@ -8,7 +8,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
             b. Go back to the CSS now and add in this style in the global section. We're going to keep this style here in the global section, because it's going to be reused throughout the project. Give it a width: 950px; margin: 0 auto; 
 
 2. Go back to your HTML and add that content wrapper to the rest of the page.
-            a. Add one in the work section right agter the section tag. Make sure that the closing tag encloses around the content. So it should be right before the closing section tag. 
+            a. Add one in the work section right after the section tag. Make sure that the closing tag encloses around the content. So it should be right before the closing section tag. 
 
             b. Add one in the education section and also the footer section. Also make sure you keep your HTML indented properly so that you can easily see where your opening and closing tags are. 
 
