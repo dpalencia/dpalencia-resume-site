@@ -24,7 +24,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
             c. . Back in your CSS file, find your h2 selector, and we're going to set the margin-top to zero (margin-top: 0;). And that's going to remove the margin space, just from the top of the element. Save it, refresh it, check it in the browser.
             
             d. Next, let's address the white border around the entire page. You could see it on the left, on the bottom, the right side, and the top. Just like the spacing between the sections, this is coming from the default margin as well, but from the body element, and that's why it's wrapping the entire page. So let's go ahead and remove that. Back in your CSS file, find your body selector and set the margin to zero (margin: 0;). Now the white space is gone and the background colors span all the way across
-            
+        
             e. Let's go back to the footer. We should probably add some space in between these links. Also, longer blocks of text are usually easier to read when it's left align, but since there's not much content here, let's also center align the text. Back in our CSS file, let's go down to the footer section. Use footer as your selector add the property (text-align: center). Save it, and refresh your browser. By adding text-align center to the footer, all of the child elements within have inherited the style.
 
             f. Back in our HTML file, to make sure that we add the styles only to the links within the footer, we're going to add a class to this div that's containing all the links. After the h2 tag that says "Let's Keep in Touch!" Add a <div class="contact-info">. This div should contain all the anchor tags.
