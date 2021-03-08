@@ -8,9 +8,32 @@
 /* Global styles 
 ------------------------------------*/
 
-/* Get rid of extra margin around page */
+/* Box model fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Get rid of extra margin around body element */
 body {
     margin: unset;
+}
+
+/* Remove margins from h1 and h2 */
+h1, h2 {
+    margin: 0;
+}
+
+
+/* Global content wrap */
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
 }
 
 /* Apply font weights and sizes */
@@ -19,9 +42,7 @@ h1, h2, a {
     font-family: 'Antic Slab', serif;
 }
 
-h2 {
-    font-size: 36px;
-}
+
 
 h3, h4, h5, h6  {
     font-weight: bold;
@@ -33,15 +54,7 @@ p, ul {
     font-weight: normal;
 }
 
-/* Border radius for portrait image */
 
-.circle-radius {
-    border-radius: 50%;
-}
-
-.solid-border {
-    border: 3px solid #466362;
-}
 
 /* Apply font and background colors for dark and light background sections */
 .dark-bg  {
@@ -63,12 +76,6 @@ p, ul {
     color: #466362;
 }
 
-.content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-
 .light-bg a {
     color: #000000;
 }
@@ -85,29 +92,47 @@ p, ul {
     color: #466362
 }
 
-/* Some extra styling */
-
 .text-center {
     text-align: center;
 }
 
-.pad-around-36 {
-    padding: 36px;
+.column-wide {
+    width: 70%;
+    float: left; 
+    min-height: 225px;
+    padding: 15px;
+}
+
+.column-narrow {
+    width: 30%; 
+    float: left; 
+    padding-right: 3%;
+    min-height: 175px;
+    padding: 15px;
+}
+
+.flex-middle {
+    display: flex;
+    align-items: center;
 }
 
 
-.unstyle-ul {
-    list-style: none;
+/* Header section */
+/* Border radius for portrait image */
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid #466362;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
-.margin-list-items li {
-    margin: 24px 0;
+/* Footer Section */
+/* Center align the footer section */
+footer {
+    text-align: center;
 }
 
-
-.content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
 }
-
-
