@@ -3,70 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
+    <title>Daniel Palencia | Resume</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- // Two google fonts: Antic Slab and Open Sans (with two weights)-->
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <!-- // Intro -->
-    <header>
-        <img src="your-picture.jpg" alt="Your Name">
-        <h1>Your Name</h1>
-        <h2>Job title or tagline</h2>
-        <p>Add your profile summary here. You can have several paragraphs or add links.</p>
+    <header class="dark-bg text-center pad-around-36">
+        <div class="content-wrap">
+            <img src="img/portrait.png" width="250" height="250" alt="Daniel Palencia" class="solid-border circle-radius">
+            <h1>Daniel Palencia</h1>
+            <h2><span class="color-green">Full Stack Developer</span> | <span class="color-rosybrown">Computer Science Student</span></h2>
+            <p>Hello! My name is Daniel and I am a senior Computer Science major at California State University, Northridge.</p>
+            <p>I worked as the technical consultant for a small graphic design agency before deciding to commit to studying computer science and furthering my coding skills. My work there involved collaborating with my graphic designer colleagues to build and troubleshoot WordPress and Shopify websites. I participated in the 2020 NSF Data Science summer bootcamp in which I was also introduced to data science and machine learning concepts. I spent time working on a computer vision project involving a NASA dataset of HiRISE images, where I worked with PyTorch to train and evalute convolutional neural networks.</p>
+            <p>Currently I am looking for a place to lay my professional roots down and begin my post-college career.</p>
+
+        </div>
     </header>
     
     <main> 
-        <!-- // Work Experience -->
-        <section>
-            <h2>Work Experience</h2>
-
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Job title</h3>
-            <p>Company Name</p>
-            <p>Date at job</p>
-            
-            <!-- Add as many paragraphs as you need. -->
-            <p>Job summary.</p>
-            
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>Optional list:</p>
-            <ul>
-                <li>Created...</li>
-                <li>Lead...</li>
-                <li>Responsible for</li>
-            </ul>
-            <!-- end of Job Details block. -->
+        <!-- // Skills -->
+        <section id="skills" class="light-bg pad-around-36">
+            <div class="content-wrap">
+                <!-- Skills block -->
+                <h2>Skills</h2>
+                <h3>Software Engineering</h3>
+                <p>Worked with the following languages in a professional oracademic setting: Python, Java, Kotlin, PHP, Dart,HTML/CSS, JavaScript, C#. Experience with softwareengineering practices such as unit testing, CI/CD, versioncontrol, project management, and team collaborationwith tools such as GitHub, GitLab, GitKraken, and Travis.</p>
+                <hr />
+                <h3>Libraries, Frameworks, CMS</h3>
+                <p>Scikit-Learn, Pandas, Numpy, Pytorch, Matplotlib,Seaborn, Android SDK, WordPress, Flutter, BootStrap, React.</p>
+                <hr />
+                <h3>Data Skills</h3>
+                <p>Experience with SQL/SQLite databases, DataCleaning/Analysis with Python and Jupyter Notebooks,applying machine learning models such as regression andneural networks, evaluating models by looking at metrics such as accuracy, precision, recall, ROC AUC.</p>
+                
+                <!-- End of skills block-->
+            </div>
             
         </section>
 
+        <!-- // Projects -->
+        <section id="projects" class="dark-bg pad-around-36">
+            <div class="content-wrap">
+                <!--Projects block -->
+                <h2>Highlighted Projects</h2>
+                <h3>MarsVision</h3>
+                <p>NSF year-long data science project. A Python-based computer vision tool utilizing classification algorithms to identify surface featureson Mars from NASA HiRISE images.</p>
+                <hr />
+                
+
+                <h3>APP-A</h3>
+                <p>CSUN senior design project. An android navigationapp targeted atblind andvisually impaired CSUN students tohelp them get around campus.</p>
+                <!-- End of Projects block-->
+            </div>
+            
+        </section>
 
         <!-- // Education -->
-        <section>
-            <h2>Education</h2>
+        <section id="education" class="light-bg pad-around-36 text-center">
+            <div class="content-wrap">
+                <h2>Education</h2>
+    
+                <!-- School details: copy this whole block to add more schools. -->
+                <h3>California State University, Northridge</h3>
+                <h4>2019 - 2021</h4>
+                <p>BSc, Computer Science. 3.95 GPA. Expected graduation in May 2021. Dean's List Fall 2019, Spring 2020, Fall 2020.</p>
+                <hr />
+                <h3>Los Angeles Pierce College</h3>
+                <h4>2012- 2019</h4>
+                <p>3.17 GPA. Transferred to CSUN.</p>
+                <!-- End of school details. -->
+                
+            </div>
+        </section>
 
-            <!-- School details: copy this whole block to add more schools. -->
-            <h3>School name, year you attended</h3>
-            <p>Designation received</p>
+        <!-- // Coursework -->
+        <section id="coursework" class="dark-bg pad-around-36">
+            <div class="content-wrap">
+                <h2>Relevant Coursework</h2>
+                <h3>Introduction to Software Engineering</h3>
+                <p>CSUN Coursework involved building an app in a team setting for the purpose of learning software engineeringpractices using GitLab. The app itself was a recipe appbuilt on a Flutter/Firebase stack.</p>
+                <hr />
+                <h3>Data Mining</h3>
+                <p>Coursework included a group project in which weanalyzed US voting data to identify gerrymanderedstates and used machine learning models to predictgerrymandering from voting results.</p>
+            </div>
+                    
+        </section>
+
+        <!-- // Work Experience -->
+        <section id="work-experience" class="light-bg pad-around-36">
+            <div class="content-wrap">
+                    <h2>Work Experience</h2>
+                    <!-- Job Details: copy this whole block to add more jobs -->
+                    <h3>Design Spinners</h3>
+                    <h4>Web Developer / Technical Support</h4>
+                    <h5>2012 - 2020</h5>
+                    <p>A small graphic design agency. My work for them involved collaborating with graphic designers to produce and maintain websites for company clients.</p>
+                    <p>
+                        <ul>
+                            <li>Performed regular maintenance of WP Engine hosted WordPress websites for company clients</li>
+                            <li>Troubleshooted and resolved technical issues with client websites</li>
+                            <li>Provided research, recommendations, and time estimates to integrate website features</li>
+                            <li>Implemented WordPress and Shopify template customizations and front-end functionality</li>
+                        </ul>
+                    </p>
+                    <!-- end of Job Details block. -->
+            </div>
             
-            <!-- Add as many paragraphs as you need. -->
-            <p>Summary.</p>
-            <!-- End of school details. -->
+        </section>
+
+        <!-- // Awards -->
+        <section id="awards" class="dark-bg pad-around-36">
+            <div class="content-wrap">
+                <!-- Awards block -->
+                <h2>Awards</h2>
+                <h3>NSF 2020 Summer Bootcamp Certificate of Completion</h3>
+                <p>Recognized for completion of the 2020 NSF Summer Bootcamp. Bootcamp introduced students to data scienceas a career, the use of industry tools and techniques, andended with a data science team project to apply theseskills; collaborated with a team of 3 to apply machine learning models to COVID-19 data.</p>
+            </div>
+            
         </section>
     </main>
     
     <!-- // Footer & contact info -->
-    <footer>
+    <footer class="light-bg pad-around-36 text-center">
         <h2>Let's Keep in Touch!</h2>
         
         <!-- Social media and contact links. Add or remove any networks. -->
+        
         <div>
-            <a href="mailto:email@example.com">email@example.com</a>
-            <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
+            <ul class="unstyle-ul margin-list-items">
+                <li>
+                   <i class="fa fa-envelope color-green" aria-hidden="true"></i> <b>Email Me</b> 
+                    <br />
+                    <a href="mailto:dpalencia2112@gmail.com">dpalencia2112@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-github color-green" aria-hidden="true"></i> <b>GitHub</b> 
+                    <br />
+                    <a href="https://github.com/dpalencia" target="_blank">GitHub</a></li>
+                <li>
+                    <i class="fa fa-linkedin color-green" aria-hidden="true"></i> <b>LinkedIn</b>
+                    <br />
+                    <a href="https://www.linkedin.com/in/danidev/" target="_blank">LinkedIn</a></li>
+            </ul>
         </div>
-
-        <p>Copyright 2017 by Your Name</p>
     </footer>
+
+    
+    <script src="https://use.fontawesome.com/02a63e8c25.js"></script>
 </body>
 </html>

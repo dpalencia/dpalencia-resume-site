@@ -1,24 +1,109 @@
 /* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
+#ece9e1
+#000000
+#987284
+#466362
 */
 
 /* Global styles 
 ------------------------------------*/
 body {
-    /*background: lightblue;*/
+    margin: unset;
 }
+
+h1, h2, a {
+    font-family: 'Antic Slab', serif;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3, h4, h5, h6  {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.circle-radius {
+    border-radius: 50%;
+}
+
+.solid-border {
+    border: 3px solid #466362;
+}
+
+
+.dark-bg  {
+    background-color: #000000;
+    color: #ece9e1;
+}
+
+.dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg hr {
+    color: #987284;
+}
+
+
+.light-bg {
+    background-color: #ece9e1;
+    color: #000000;
+}
+
+.light-bg h3, .light-bg h4, .light-bg h5, .light-bg hr {
+    color: #466362;
+}
+
+
+.light-bg a {
+    color: #000000;
+}
+
+.dark-bg a {
+    color: #ece9e1;
+}
+
+.color-rosybrown {
+    color: #987284;
+}
+
+.color-green {
+    color: #466362
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pad-around-36 {
+    padding: 36px;
+}
+
+
+.unstyle-ul {
+    list-style: none;
+}
+
+.margin-list-items li {
+    margin: 24px 0;
+}
+
 
 
 /* Header & Footer 
 ------------------------------------*/
 
 
-
 /* Work Experience
 ------------------------------------*/
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+}
 
 
 
