@@ -3,7 +3,7 @@ HW8 Resume Site
 In this hw, you’ll continue working on your resume site. You can continue buliding on from HW6&7.
 
 1.	Add a navigation menu to your resume site.
-			      a.	For this HW add a navigation menu without using a list. An example of this is can be found in the lecture material. 
+			a.	For this HW add a navigation menu without using a list. An example of this is can be found in the lecture material. 
 
             b. Each item in the menu should link to a specific section of your resume.
 

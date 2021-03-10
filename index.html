@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://use.fontawesome.com/02a63e8c25.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Palencia | Resume</title>
@@ -12,11 +13,20 @@
 <body>
     <!-- // Intro -->
     <header class="dark-bg">
-        <div class="content-wrap flex-middle">
+        <nav class="fixed-nav">
+            <a href="#top">Top</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#coursework">Coursework</a>
+            <a href="#work-experience">Work Experience</a>
+            <a href="#awards">Awards</a>
+        </nav>
+        <div class="content-wrap flex-middle" id="top">
             <img src="https://cdn.glitch.com/6b47c2ca-7e1b-4d1c-9240-6753b4f5d5e2%2Fportrait.png?v=1615227387879"  alt="Daniel Palencia" class="profile-img column-narrow">
             <div class="column-wide">
                 <h1>Daniel Palencia</h1>
-                <h2><span class="color-green">Full Stack Developer</span> <br /> <span class="color-rosybrown">Computer Science Student</span></h2>
+                <h2><span class="color-accent1">Full Stack Developer</span> <br /> <span class="color-accent1">Computer Science Student</span></h2>
                 <p>Hello! My name is Daniel and I am a senior Computer Science major at California State University, Northridge.</p>
                 <p>I worked as the technical consultant for a small graphic design agency before deciding to commit to studying computer science and furthering my coding skills. My work there involved collaborating with my graphic designer colleagues to build and troubleshoot WordPress and Shopify websites.</p>
                 <p> I participated in the 2020 NSF Data Science summer bootcamp in which I was also introduced to data science and machine learning concepts. I spent time working on a computer vision project involving a NASA dataset of HiRISE images, where I worked with PyTorch to train and evalute convolutional neural networks.</p>
@@ -26,8 +36,9 @@
     
     <main> 
         <!-- // Skills -->
-        <section id="skills" class="light-bg ">
-            <div class="content-wrap">
+        <section class="skills-bg dark-bg section-withpadding">
+            <a class="anchor" id="skills"></a>
+            <div class="content-wrap content-wrap-withbg">
                 <!-- Skills block -->
                 <h2>Skills</h2>
                 <h3>Software Engineering</h3>
@@ -37,7 +48,7 @@
                 <p>Scikit-Learn, Pandas, Numpy, Pytorch, Matplotlib,Seaborn, Android SDK, WordPress, Flutter, BootStrap, React.</p>
                 <hr />
                 <h3>Data Skills</h3>
-                <p>Experience with SQL/SQLite databases, DataCleaning/Analysis with Python and Jupyter Notebooks,applying machine learning models such as regression andneural networks, evaluating models by looking at metrics such as accuracy, precision, recall, ROC AUC.</p>
+                <p>Experience with SQL/SQLite databases, DataCleaning/Analysis with Python and Jupyter Notebooks,applying machine learning models such as regression and neural networks, evaluating models by looking at metrics such as accuracy, precision, recall, ROC AUC.</p>
                 
                 <!-- End of skills block-->
             </div>
@@ -45,7 +56,8 @@
         </section>
 
         <!-- // Projects -->
-        <section id="projects" class="dark-bg ">
+        <section class="dark-bg ">
+            <a class="anchor" id="projects"></a>
             <div class="content-wrap">
                 <!--Projects block -->
                 <h2>Highlighted Projects</h2>
@@ -55,15 +67,16 @@
                 
 
                 <h3>APP-A</h3>
-                <p>CSUN senior design project. An android navigationapp targeted atblind andvisually impaired CSUN students tohelp them get around campus.</p>
+                <p>CSUN senior design project. An android navigationapp targeted atblind and visually impaired CSUN students tohelp them get around campus.</p>
                 <!-- End of Projects block-->
             </div>
             
         </section>
 
         <!-- // Education -->
-        <section id="education" class="light-bg  text-center">
-            <div class="content-wrap">
+        <section class="education-bg light-bg  text-center section-withpadding">
+            <a class="anchor" id="education"></a>
+            <div class="content-wrap content-wrap-withbg-light">
                 <h2>Education</h2>
     
                 <!-- School details: copy this whole block to add more schools. -->
@@ -80,7 +93,8 @@
         </section>
 
         <!-- // Coursework -->
-        <section id="coursework" class="dark-bg ">
+        <section class="dark-bg ">
+            <a class="anchor" id="coursework"></a>
             <div class="content-wrap">
                 <h2>Relevant Coursework</h2>
                 <h3>Introduction to Software Engineering</h3>
@@ -93,7 +107,8 @@
         </section>
 
         <!-- // Work Experience -->
-        <section id="work-experience" class="light-bg ">
+        <section class="light-bg ">
+            <a class="anchor" id="work-experience"></a>
             <div class="content-wrap">
                     <h2>Work Experience</h2>
                     <div class="column-narrow">
@@ -117,7 +132,8 @@
         </section>
 
         <!-- // Awards -->
-        <section id="awards" class="dark-bg ">
+        <section class="dark-bg ">
+            <a class="anchor" id="awards"></a>
             <div class="content-wrap">
                 <!-- Awards block -->
                 <h2>Awards</h2>
@@ -134,13 +150,15 @@
             <h2>Let's Keep in Touch!</h2>
              <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
-                <a href="mailto:dpalencia2112@gmail.com">dpalencia2112@gmail.com</a>
-                <a href="https://github.com/dpalencia" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/danidev" target="_blank">LinkedIn</a>
+                <a href="mailto:dpalencia2112@gmail.com"><i class="fa fa-envelope-square color-accent2"></i> <br />Email</a>
+                <a href="https://github.com/dpalencia" target="_blank"><i class="fa fa-github color-accent2"></i> <br />GitHub</a>
+                <a href="https://linkedin.com/in/danidev" target="_blank"><i class="fa fa-linkedin color-accent2"></i> <br /> LinkedIn</a>
             </div>
     </footer>
 
     
-    <script src="https://use.fontawesome.com/02a63e8c25.js"></script>
+    
+    
+
 </body>
 </html>

@@ -2,11 +2,18 @@
 #ece9e1
 #000000 
 #987284
-#466362
+#1C77C3
 */
 
 /* Global styles 
 ------------------------------------*/
+
+:root {
+    --offwhite: #ece9e1;
+    --black: #000;
+    --accent2: #A30B37;
+    --accent1: #1C77C3;
+}
 
 /* Box model fix */
 html {
@@ -22,6 +29,10 @@ body {
     margin: unset;
 }
 
+header .content-wrap {
+    padding-top: 79px;
+}
+
 /* Remove margins from h1 and h2 */
 h1, h2 {
     margin: 0;
@@ -34,6 +45,21 @@ h1, h2 {
     margin: 0 auto;
     padding: 50px;
     overflow: hidden;
+}
+
+.content-wrap-withbg {
+    border-radius: 20px;
+    background-color: var(--black);
+}
+
+.content-wrap-withbg-light {
+    border-radius: 20px;
+    background-color: var(--offwhite);
+    
+}
+
+.section-withpadding {
+    padding: 100px 0 100px;
 }
 
 /* Apply font weights and sizes */
@@ -63,7 +89,7 @@ p, ul {
 }
 
 .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg hr {
-    color: #987284;
+    color: var(--accent1);
 }
 
 
@@ -73,7 +99,7 @@ p, ul {
 }
 
 .light-bg h3, .light-bg h4, .light-bg h5, .light-bg hr {
-    color: #466362;
+    color: var(--accent2)
 }
 
 .light-bg a {
@@ -84,12 +110,12 @@ p, ul {
     color: #ece9e1;
 }
 
-.color-rosybrown {
-    color: #987284;
+.color-accent1 {
+    color: var(--accent1);
 }
 
-.color-green {
-    color: #466362
+.color-accent2 {
+    color: var(--accent2)
 }
 
 .text-center {
@@ -116,15 +142,57 @@ p, ul {
     align-items: center;
 }
 
+/* Fix for fixed header offset when clicking anchor tags */
+a.anchor {
+    visibility: hidden;
+    top: -79px;
+    display: block;
+    position: relative;
+    
+}
+
 
 /* Header section */
 /* Border radius for portrait image */
 .profile-img {
     border-radius: 50%;
-    border: 3px solid #466362;
+    border: 3px solid var(--accent1);
     margin-bottom: 10px;
     padding: 0;
 }
+
+
+.fixed-nav {
+    position: fixed;
+    background-color: var(--accent1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.fixed-nav a {
+    padding: 12px;
+    margin: 6px;
+    background-color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-bg {
+    background-image: url("../img/skills-bg.jpg");
+    background-size: cover;
+}
+
+
+/* Education */
+.education-bg {
+    background: linear-gradient(45deg, #000000A1, #A30B37A1), url("../img/csun-bg.jpg");
+    background-size: cover;
+}
+
 
 /* Footer Section */
 /* Center align the footer section */
@@ -136,3 +204,4 @@ footer {
     padding: 10px;
     display: inline-block;
 }
+
