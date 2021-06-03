@@ -30,8 +30,9 @@ body {
 }
 
 header .content-wrap {
-    padding-top: 79px;
+    padding-top: 100px;
 }
+
 
 /* Remove margins from h1 and h2 */
 h1, h2 {
@@ -47,6 +48,13 @@ h1, h2 {
     overflow: hidden;
 }
 
+/* Mobile padding adjustment for content wrap generic */
+@media (max-width: 767px) {
+    .content-wrap {
+        padding: 25px;
+    }
+}
+
 .content-wrap-withbg {
     border-radius: 20px;
     background-color: var(--black);
@@ -59,7 +67,7 @@ h1, h2 {
 }
 
 .section-withpadding {
-    padding: 100px 0 100px;
+    padding: 100px 25px;;
 }
 
 /* Apply font weights and sizes */
@@ -137,9 +145,35 @@ p, ul {
     padding: 15px;
 }
 
+/* Make columns stack on mobile and center text. */
+@media (max-width: 767px) {
+    .content-wrap {
+        text-align: center;
+    }
+
+    .column-wide, .column-narrow {
+        width: 100%;
+        min-height: unset;
+        float: unset;
+        padding: 5px;
+    }
+
+    /* Don't center list items. */
+    li {
+        text-align: left;
+    }
+}
+
 .flex-middle {
     display: flex;
     align-items: center;
+}
+
+/* Flex mobile media query */
+@media (max-width: 767px) {
+    .flex-middle {
+        flex-direction: column;
+    }
 }
 
 
@@ -190,8 +224,39 @@ a.anchor {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
     display: inline-block;
 }
+
+#menu-items {
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* Mobile menu stuff */
+
+@media (min-width: 1001px) {
+    #menu-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #menu-items.hide {
+        opacity: 0;
+        display: none;
+    }
+
+    #menu-items {
+        flex-direction: column;
+    }
+    .fixed-nav {
+        flex-direction: column;
+    }
+}
+
+
 
 /* Skills Section */
 .skills-bg {

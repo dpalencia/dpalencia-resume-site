@@ -1,3 +1,7 @@
+<!-- 
+    Looking at my stuff, eh? 👀👀
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +18,29 @@
     <!-- // Intro -->
     <header class="dark-bg">
         <nav class="fixed-nav">
-            <a href="#top">Top</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#coursework">Coursework</a>
-            <a href="#work-experience">Work Experience</a>
-            <a href="#awards">Awards</a>
-            <a href="dpalencia-resume-march21.pdf" target="_blank">Download Resume</a>
+            <a id="menu-btn" href="#">Menu <i id="menu-icon" class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <!-- Wrap the primary menu items in a div so we can target them on user interactions. -->
+            <!-- The "hide" class is only functional on mobile through media queries. On desktop it does nothing. -->
+            <div id="menu-items" class="hide">
+                <a href="#top">Top</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#coursework">Coursework</a>
+                <a href="#work-experience">Work Experience</a>
+                <a href="#awards">Awards</a>
+                <a href="dpalencia-resume-march21.pdf">Download Resume</a>
+            </div>
         </nav>
         <div class="content-wrap flex-middle" id="top">
-            <img src="https://cdn.glitch.com/6b47c2ca-7e1b-4d1c-9240-6753b4f5d5e2%2Fportrait.png?v=1615227387879"  alt="Daniel Palencia" class="profile-img column-narrow">
+            <img width="255" src="img\danielportrait.jpg"  alt="Daniel Palencia" class="profile-img" />
             <div class="column-wide">
                 <h1>Daniel Palencia</h1>
-                <h2><span class="color-accent1">Full Stack Developer</span> <br /> <span class="color-accent1">Computer Science Student</span></h2>
-                <p>Hello! My name is Daniel and I am a senior Computer Science major at California State University, Northridge.</p>
+                <h2><span class="color-accent1">NASA Intern</span> <br /> <span class="color-accent1">Computer Science B.S.</span></h2>
+                <h3>They/Them/Theirs</h3>
+                <p>Hello! My name is Daniel and I am a Computer Science graduate from California State University, Northridge currently working as a summer intern for NASA Armstrong.</p>
                 <p>I worked as the technical consultant for a small graphic design agency before deciding to commit to studying computer science to further my technical skills. My work there involved collaborating with my graphic designer colleagues to build and troubleshoot WordPress and Shopify websites.</p>
-                <p> I participated in the 2020 NSF Data Science summer bootcamp in which I was also introduced to data science and machine learning concepts. I spent time working on a computer vision project involving a NASA dataset of HiRISE images, where I worked with PyTorch to train and evalute convolutional neural networks.</p>
+                <p>I participated in the 2020 NSF Data Science summer bootcamp in which I was also introduced to data science and machine learning concepts. I spent time working on a computer vision project involving a NASA dataset of HiRISE images, where I worked with PyTorch to implement a convolutional neural network into a pipeline that identifies surface features on Mars.</p>
             </div>
         </div>
     </header>
@@ -43,13 +53,13 @@
                 <!-- Skills block -->
                 <h2>Skills</h2>
                 <h3>Software Engineering</h3>
-                <p>Worked with the following languages in a professional oracademic setting: Python, Java, Kotlin, PHP, Dart,HTML/CSS, JavaScript, C#. Experience with software engineering practices such as unit testing, CI/CD, versioncontrol, project management, and team collaborationwith tools such as GitHub, GitLab, GitKraken, and Travis.</p>
+                <p>Worked with the following languages in a professional or academic setting: Python, Java, Kotlin, PHP, Dart, HTML/CSS, JavaScript, C#. Experience with software engineering practices such as unit testing, CI/CD, versioncontrol, project management, and team collaborationwith tools such as GitHub, GitLab, GitKraken, and Travis.</p>
                 <hr />
                 <h3>Libraries, Frameworks, CMS</h3>
                 <p>Scikit-Learn, Pandas, Numpy, Pytorch, Matplotlib, Seaborn, Android SDK, WordPress, Flutter, BootStrap, React.</p>
                 <hr />
-                <h3>Data Skills</h3>
-                <p>Experience with SQL/SQLite databases, DataCleaning/Analysis with Python and Jupyter Notebooks,applying machine learning models such as regression and neural networks, evaluating models by looking at metrics such as accuracy, precision, recall, ROC AUC.</p>
+                <h3>Data Science & Machine Learning</h3>
+                <p>Experience with SQL/SQLite databases. Data Cleaning/Analysis with Python and Jupyter Notebooks. Working with machine learning frameworks including Scikit-Learn and Pytorch to train and evaluate machine learning models including deep learning models such as CNNs. Evaluating classification models by looking at metrics such as accuracy, precision, recall, ROC AUC.</p>
                 
                 <!-- End of skills block-->
             </div>
@@ -83,7 +93,7 @@
                 <!-- School details: copy this whole block to add more schools. -->
                 <h3>California State University, Northridge</h3>
                 <h4>2019 - 2021</h4>
-                <p>BSc, Computer Science. 3.95 GPA. Expected graduation in May 2021. Dean's List Fall 2019, Spring 2020, Fall 2020.</p>
+                <p>B.S. Computer Science. 3.96 GPA. Expected graduation in May 2021. Dean's List Fall 2019, Spring 2020, Fall 2020, Spring 2021.</p>
                 <hr />
                 <h3>Los Angeles Pierce College</h3>
                 <h4>2012- 2019</h4>
@@ -103,6 +113,9 @@
                 <hr />
                 <h3>Data Mining</h3>
                 <p>Coursework included a group project in which weanalyzed US voting data to identify gerrymandered states and used machine learning models to predict gerrymandering from voting results.</p>
+                <hr />
+                <h3>Senior Design Project</h3>
+                <p>Two semester long senior design project. Worked with a team to create APP-A, an Android application that assists visually impaired students with navigation around the CSUN campus.</p>
             </div>
                     
         </section>
@@ -138,8 +151,8 @@
             <div class="content-wrap">
                 <!-- Awards block -->
                 <h2>Awards</h2>
-                <h3>NSF 2020 Summer Bootcamp Certificate of Completion</h3>
-                <p>Recognized for completion of the 2020 NSF Summer Bootcamp. Bootcamp introduced students to data scienceas a career, the use of industry tools and techniques, andended with a data science team project to apply theseskills; collaborated with a team of 3 to apply machine learning models to COVID-19 data.</p>
+                <h3>NSF 2020-2021 Certificate of Completion</h3>
+                <p>Recognized for completion of the 2020-2021 NSF Data Science Program. Bootcamp introduced students to data science as a career. Program included a year long data science project. My project was MarsVision, a computer vision project that aimed to detect surface features on Mars using machine learning methods.</p>
             </div>
             
         </section>
@@ -157,9 +170,6 @@
             </div>
     </footer>
 
-    
-    
-    
-
+    <script src="scripts.js"></script>
 </body>
 </html>
